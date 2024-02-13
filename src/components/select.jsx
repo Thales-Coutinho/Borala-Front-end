@@ -3,9 +3,16 @@ function Select(props) {
     return (
         <>
             <label>{props.text}</label>
-            <br/>
+            <br />
             <select>
-            <option value="">Selecione uma cidade</option>
+                <option value="">Selecione uma cidade</option>
+                {props.itens.map(item =>
+                    <option
+                        key={item.id}
+                        value={item.id}>
+                        {item.nome}
+                    </option>
+                )}
             </select>
         </>
     )
