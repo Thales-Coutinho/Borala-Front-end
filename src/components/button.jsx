@@ -1,7 +1,8 @@
 function Button(props) {
 
     return (
-      <button>
+      <button 
+      onClick={props.click}>
         {props.text}
       </button>
     )

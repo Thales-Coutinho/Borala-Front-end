@@ -1,12 +1,22 @@
 import { useContext } from "react"
+import { Link } from 'react-router-dom'
 import { GlobbalContext } from "../context/globalContext"
 
 import Button from "../components/button"
 import InputDate from "../components/inputDate"
 import Select from "../components/select"
+import apiRest from "../utils/apiRest"
 
 function Search() {
-    const { cities } = useContext(GlobbalContext)
+    const { cities, setTrips } = useContext(GlobbalContext)
+
+    function pesquisar(){
+        apiRest.get('viagens/')
+            .then(response => {
+                setTrips(response.data)
+            })
+
+    }
 
     return (
         <div>
@@ -30,7 +40,9 @@ function Search() {
             <InputDate text="data da viagem" />
             <br />
             <br />
-            <Button text="pesquisar" />
+            <Link to="/viagensDisponiveis">
+                <Button text="pesquisar" click={pesquisar}/>
+            </Link>
         </div>
     )
 }

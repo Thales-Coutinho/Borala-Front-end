@@ -7,6 +7,7 @@ GlobbalContext.displayName = "Context Borala"
 export const GlobbalProvider = ({ children }) => {
 
     let [cities, setCities] = useState([])
+    let [trips, setTrips] = useState([])
 
     useEffect(() => {
         apiRest.get('cidades/')
@@ -19,7 +20,8 @@ export const GlobbalProvider = ({ children }) => {
         <GlobbalContext.Provider
             value={{
                 cities,
-                setCities
+                trips,
+                setTrips
             }}
         >
             {children}
