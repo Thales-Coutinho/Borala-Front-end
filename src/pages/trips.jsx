@@ -6,13 +6,17 @@ import Button from "../components/button"
 import TripCard from "../components/tripCard";
 
 function Trips() {
-    const { trips } = useContext(GlobbalContext)
+    const { trips, filters } = useContext(GlobbalContext)
     return (
         <>
+            {filters.departureCity !== undefined &&
+                <h1>viagens de: {filters.departureCity} Para: {filters.destinationCity} no dia:{filters.day}</h1>
+            }
+
             {trips.length > 0 ?
                 <div>
                     {trips.map(trip =>
-                        <TripCard key={trip.id} trip={trip}/>
+                        <TripCard key={trip.id} trip={trip} />
                     )}
                 </div>
                 :
@@ -22,7 +26,8 @@ function Trips() {
                     <p> não há nenhuma viagem disponivel para o destino e dia especificado</p>
                 </div>
             }
-            <br/>
+            
+            <br />
             <Link to="/">
                 <Button text="Voltar" />
             </Link>

@@ -8,6 +8,7 @@ export const GlobbalProvider = ({ children }) => {
 
     let [cities, setCities] = useState([])
     let [trips, setTrips] = useState([])
+    let [filters, setfilters] = useState([])
 
     useEffect(() => {
         apiRest.get('cidades/')
@@ -21,7 +22,9 @@ export const GlobbalProvider = ({ children }) => {
             value={{
                 cities,
                 trips,
-                setTrips
+                setTrips,
+                filters,
+                setfilters
             }}
         >
             {children}
