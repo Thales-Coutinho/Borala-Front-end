@@ -4,7 +4,7 @@ function InputDate(props) {
         <>
             <label>{props.text}</label>
             <br />
-            <input type="date"
+            <input type="date" placeholder="dd-mm-yyyy"
                 value={props.value} onChange={event => props.onChange(event.target.value)}
                 required={props.required}
             />

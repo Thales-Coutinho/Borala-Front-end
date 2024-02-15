@@ -9,25 +9,34 @@ import apiRest from "../utils/apiRest"
 
 function Search() {
     const navigate = useNavigate()
-    const { cities, setTrips, setfilters } = useContext(GlobbalContext)
+    const { cities, setTrips, filters, setfilters } = useContext(GlobbalContext)
 
     const [departureCity, setDepartureCity] = useState('')
     const [destinationCity, setDestinationCity] = useState('')
     const [day, setDay] = useState('')
 
+    const parametros = {
+        epartureCity: departureCity,
+        destinationCity: destinationCity,
+        day: day,
+    }
+
     function search() {
-        apiRest.get('viagens/')
+
+        setfilters({
+            departureCity: departureCity,
+            destinationCity: destinationCity,
+            day: day,
+        })
+
+        apiRest.get('viagens/', {
+            params: filters,
+        })
             .then(response => {
                 setTrips(response.data)
             })
 
-            setfilters({
-                departureCity: departureCity,
-                destinationCity: destinationCity,
-                day: day,
-            })
-
-            navigate("/viagensDisponiveis")
+        navigate("/viagensDisponiveis")
 
     }
 
