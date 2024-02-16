@@ -1,6 +1,37 @@
+import styled from "styled-components"
+import { FaRegUserCircle } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+
 import Button from "../components/button"
 
+const DivStyled = styled.div`
+background: #FFFFFF;
+border: #51714B solid 1px;
+border-radius: 14px;
+margin:  0  auto;
+padding: 20px;
+margin-bottom: 10px;
+
+div{
+    display: flex;
+  align-items: center;
+  padding: 0;
+}
+h1{
+    margin-left:10px;
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+}
+span{
+    margin-left: 20px;
+}
+
+`
+
 function TripCard(props) {
+
     function confirmReservation() {
         if (confirm("confirmar reserva?") == true) {
             alert("viagem reservada!")
@@ -8,14 +39,20 @@ function TripCard(props) {
     }
 
     return (
-        <div>
-            <h1>{props.trip.nome}</h1>
-            <p>nota do motorista: {props.trip.nota}</p>
-            <p>horario de partida: {props.trip.hora}</p>
-            <p>local de partida: {props.trip.local}</p>
-            <p>valor: {props.trip.valor}</p>
+        <DivStyled>
+            <div>
+                <FaRegUserCircle size={25} />
+                <h1>{props.trip.nome}</h1>
+                <span>
+                {props.trip.nota}
+                <FaStar color="#ffc700" />
+                </span>
+            </div>
+            <p>valor: <span><b>{props.trip.valor} R$</b></span></p>
+            <p>horario de partida: <b>{props.trip.hora}</b></p>
+            <p>local de partida: <b>{props.trip.local}</b></p>
             <Button text="reservar viagem" click={confirmReservation} />
-        </div>
+        </DivStyled>
     )
 }
 

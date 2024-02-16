@@ -1,7 +1,7 @@
 function Select(props) {
 
     return (
-        <>
+        <div>
             <label>{props.text}</label>
             <br />
             <select
@@ -18,7 +18,7 @@ function Select(props) {
                     </option>
                 )}
             </select>
-        </>
+        </div>
     )
 }
 

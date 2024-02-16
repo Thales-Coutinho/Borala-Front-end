@@ -1,7 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+import InterRegular from "./fonts/Inter-Regular.ttf";
+import InterBold from "./fonts/Inter-Bold.ttf";
 
+
+const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'InterRegular';
+  src: local('Inter Regular'), local('InterRegular'), url(${InterRegular});
+}
+@font-face {
+  font-family: 'InterBold';
+  src: local('Inter Bold'), local('InterBold'), url(${InterBold});
+}
+
+/* CSS normalizer */
 html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
