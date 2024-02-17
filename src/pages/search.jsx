@@ -17,6 +17,10 @@ border-radius: 14px;
 margin:  0  auto;
 padding: 20px;
 
+display: flex;
+  align-items: center;
+  flex-direction: column;
+
 
   div > * {
   margin: 0 0 10px;
@@ -31,12 +35,6 @@ function Search() {
     const [departureCity, setDepartureCity] = useState('')
     const [destinationCity, setDestinationCity] = useState('')
     const [day, setDay] = useState('')
-
-    const parametros = {
-        epartureCity: departureCity,
-        destinationCity: destinationCity,
-        day: day,
-    }
 
     function search() {
 

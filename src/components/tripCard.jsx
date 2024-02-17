@@ -1,8 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components"
-import { FaRegUserCircle } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+import { FaRegUserCircle, FaStar } from "react-icons/fa";
 
 import Button from "../components/button"
+
 
 const DivStyled = styled.div`
 background: #FFFFFF;
@@ -31,10 +32,11 @@ span{
 `
 
 function TripCard(props) {
+    const navigate = useNavigate()
 
     function confirmReservation() {
         if (confirm("confirmar reserva?") == true) {
-            alert("viagem reservada!")
+            navigate("/ReservadoComSucesso")
         }
     }
 

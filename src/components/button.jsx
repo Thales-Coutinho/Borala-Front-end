@@ -4,7 +4,7 @@ const ButtonStyled = styled.button`
 display: flex;
   margin: auto;
   width: 120px;
-  height: 20px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 14px;

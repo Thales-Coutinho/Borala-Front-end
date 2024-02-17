@@ -1,9 +1,10 @@
 import { useContext } from "react"
 import { Link } from 'react-router-dom'
-import { PiSmileySad } from "react-icons/pi";
 import { GlobbalContext } from "../context/globalContext"
+
 import Button from "../components/button"
 import TripCard from "../components/tripCard";
+import TripNotFounded from "../components/tripNotFounded";
 
 function Trips() {
     const { trips, filters } = useContext(GlobbalContext)
@@ -20,11 +21,7 @@ function Trips() {
                     )}
                 </div>
                 :
-                <div>
-                    <h1>Desculpe, nenhuma viagem encontrada</h1>
-                    <PiSmileySad size={100} />
-                    <p> não há nenhuma viagem disponivel para o destino e dia especificado</p>
-                </div>
+                <TripNotFounded/>
             }
             
             <br />
