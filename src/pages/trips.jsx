@@ -23,9 +23,8 @@ function Trips() {
                 :
                 <TripNotFounded/>
             }
-            
             <br />
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }}>
                 <Button text="Voltar" />
             </Link>
         </>

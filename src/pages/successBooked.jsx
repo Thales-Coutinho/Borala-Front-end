@@ -11,6 +11,7 @@ border-radius: 14px;
 margin:  0  auto;
 padding: 20px;
 margin-bottom: 10px;
+text-align: center;
 
 display: flex;
   align-items: center;
@@ -28,7 +29,7 @@ function SucessBooked() {
         <DivStyled>
             <img src="/images/sucessBooked.png"></img>
             <div>
-                <h1>Sua reserva foi feita com sucesso ! <FaHandPeace size={30} color="#ffff00" /></h1>
+                <h1>Reserva feita com sucesso ! <FaHandPeace size={30} color="#e6e616" /></h1>
                 
             </div>
             <IoIosCheckmarkCircle size={50} />

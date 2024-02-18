@@ -22,6 +22,7 @@ function Button(props) {
   return (
     <ButtonStyled
       onClick={props.click}>
+        {props.icon}
       {props.text}
     </ButtonStyled>
   )

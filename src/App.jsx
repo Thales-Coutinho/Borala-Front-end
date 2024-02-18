@@ -8,6 +8,7 @@ import Search from "./pages/search";
 import SucessBooked from "./pages/successBooked";
 import Trips from "./pages/trips";
 import Error404 from "./pages/error404";
+import BottonMenu from "./components/bottomMenu";
 
 const Background = styled.div`
 background-color: #D8D7D7;
@@ -32,6 +33,7 @@ function App() {
             <Route path="*" element={<Error404 />} />
           </Routes>
         </GlobbalProvider>
+        <BottonMenu/>
       </BrowserRouter>
     </Background>
   )

@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { useNavigate } from 'react-router-dom'
 import styled from "styled-components"
+import { SlLocationPin, SlCalender, SlMagnifier } from "react-icons/sl";
 
 import { GlobbalContext } from "../context/globalContext"
 import apiRest from "../utils/apiRest"
@@ -57,25 +58,25 @@ function Search() {
 
     return (
         <FormStyled onSubmit={search}>
-            <h1>buscar por viagem</h1>
+            <h1>Buscar Carona</h1>
             <Select
-                text="local de partida" placeholder="selecione uma cidade"
+                text="Local de partida" icon={<SlLocationPin />} placeholder="selecione uma cidade"
                 itens={cities}
                 value={departureCity} onChange={value => setDepartureCity(value)}
                 required={true}
             />
             <Select
-                text="para onde voce quer ir" placeholder="selecione uma cidade"
+                text="Para onde você vai" icon={<SlLocationPin />} placeholder="selecione uma cidade"
                 itens={cities}
                 value={destinationCity} onChange={value => setDestinationCity(value)}
                 required={true}
             />
             <InputDate
-                text="data da viagem"
+                text="Data da viagem" icon={<SlCalender />} 
                 value={day} onChange={value => setDay(value)}
                 required={true}
             />
-            <Button text="pesquisar" />
+            <Button text="Pesquisar" icon={<SlMagnifier />} />
         </FormStyled>
     )
 }
