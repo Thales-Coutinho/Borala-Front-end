@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { TbError404 } from "react-icons/tb";
 
 import Button from "../components/button"
 
@@ -25,8 +24,9 @@ function Error404() {
     return (
         <DivStyled>
             <h1>pagina não encontrada</h1>
-            <TbError404 size={100} />
-            <img src="/images/error-404.jpeg"></img>
+
+
+            <img src="/images/error-404.jpeg" alt="Error 404" ></img>
             <Button
                 text="voltar"
                 click={() => navigate(-1)}

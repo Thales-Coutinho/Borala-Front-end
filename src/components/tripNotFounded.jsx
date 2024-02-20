@@ -7,6 +7,8 @@ border-radius: 14px;
 margin:  0  auto;
 padding: 20px;
 margin-bottom: 10px;
+text-align: center;
+
 
 display: flex;
   align-items: center;

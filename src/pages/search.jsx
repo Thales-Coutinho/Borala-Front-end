@@ -15,12 +15,14 @@ const FormStyled = styled.form`
 background: #FFFFFF;
 border: #51714B solid 1px;
 border-radius: 14px;
-margin:  0  auto;
+margin:  auto;
 padding: 20px;
 
 display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  
 
 
   div > * {

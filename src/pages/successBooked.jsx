@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaHandPeace } from "react-icons/fa";
-import { IoIosCheckmarkCircle } from "react-icons/io";
 
 
 
@@ -12,27 +11,24 @@ margin:  0  auto;
 padding: 20px;
 margin-bottom: 10px;
 text-align: center;
+margin:  auto;
 
 display: flex;
   align-items: center;
   flex-direction: column;
 
-  p {
-    max-width: 500px;
-    word-wrap: break-word;
-  }
+  
 `
 
 function SucessBooked() {
 
     return (
         <DivStyled>
-            <img src="/images/sucessBooked.png"></img>
             <div>
                 <h1>Reserva feita com sucesso ! <FaHandPeace size={30} color="#e6e616" /></h1>
                 
             </div>
-            <IoIosCheckmarkCircle size={50} />
+            <img src="/images/sucessBooked.png"></img>
             <p>
                 Agora fique atento as notificações no seu celular ou
                 email para poder acompanhar sobre mais informações,
