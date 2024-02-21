@@ -4,7 +4,7 @@ const DivStyled = styled.div`
 background: #FFFFFF;
 border: #51714B solid 1px;
 border-radius: 14px;
-margin:  0  auto;
+margin: auto;
 padding: 20px;
 margin-bottom: 10px;
 text-align: center;
