@@ -47,7 +47,7 @@ function Search() {
             day: day,
         })
 
-        apiRest.get('viagens/', {
+        apiRest.get('trips/', {
             params: filters,
         })
             .then(response => {

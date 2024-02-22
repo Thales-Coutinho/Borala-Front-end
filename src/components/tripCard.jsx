@@ -12,6 +12,7 @@ border-radius: 14px;
 margin:  0  auto;
 padding: 20px;
 margin-bottom: 10px;
+max-width: 350px;
 
 div{
     display: flex;
@@ -44,14 +45,14 @@ function TripCard(props) {
         <DivStyled>
             <div>
                 <FaRegUserCircle size={25} />
-                <h1>{props.trip.nome}</h1>
+                <h1>{props.trip.name}</h1>
                 <span>
-                {props.trip.nota}
+                {props.trip.score}
                 <FaStar color="#ffc700" />
                 </span>
             </div>
-            <p>valor: <span><b>{props.trip.valor} R$</b></span></p>
-            <p>horario de partida: <b>{props.trip.hora}</b></p>
+            <p>valor: <span><b>{props.trip.price} R$</b></span></p>
+            <p>horario de partida: <b>{props.trip.hour}</b></p>
             <p>local de partida: <b>{props.trip.local}</b></p>
             <Button text="reservar viagem" click={confirmReservation} />
         </DivStyled>

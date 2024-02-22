@@ -7,44 +7,51 @@
 Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:(...)
 
 ## Índice
-- <a href="#funcinalidades">Funcionalidades do Projeto</a>
-- <a href="#tecnologias">Tecnologias utilizadas</a>
-- <a href="#beneficios">Benefícios</a>
-- <a href="#rodando">Como rodar o projeto?</a>
-- <a href="#autoras">Pessoas Autoras</a>
+- <a href="##funcinalidades">Funcionalidades do Projeto</a>
+- <a href="##tecnologias">Tecnologias utilizadas</a>
+- <a href="##beneficios">Benefícios</a>
+- <a href="##beneficios">Benefícios</a>
+- <a href="##rodando">Como rodar o projeto?</a>
+- <a href="##Autores">Pessoas Autoras</a>
 
-### 📱Funcionalidades do Projeto
-- [x] Cadastro de usuário
-- [x] Login
-- [ ] Solicitar carona
-- [x] Solicitar oferecer
-- [x] Informa disponibilidade de assentos
-- [x] Fazer reserva 
-- [x] Confirmar reserva
+## 📱Funcionalidades do Projeto
+- [ ] Cadastro de usuário
+- [ ] Login
+- [X] Solicitar carona
+- [ ] Oferecer carona
+- [ ] Informa disponibilidade de assentos
+- [ ] Fazer reserva 
+- [ ] Confirmar reserva
 
-### Como rodar o projeto?
+## Como rodar o projeto?
 
 1. clone o repositório e instale o node.Js em sua maquina (https://nodejs.org/en/download/current)
 2. execute o comando (npm install) para instalar as dependencias do projeto 
 3. execute o comando (npm run dev) para rodar a aplicação no modo desenvolvimento
 4. acesse em qualquer navegador o endereço http://localhost:5173/
 
-### 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
 1. [React](https://react.dev/)
 2. [Vite](https://vitejs.dev/)
-3. [styled-components](https://styled-components.com/)
+3. [React-Router](https://reactrouter.com/en/main)
 4. [axios](https://axios-http.com/docs/intro)
+5. [styled-components](https://styled-components.com/)
 
-### Benefícios 
+
+## Benefícios
 - Compartilhar custos de viagens
 - Redução de tráfego nas rodovias
 - Flexibilidade de horários
 - Acessibilidade com carros preparados para decifientes
 
-### Pessoas Autoras
+## Autores
 - Henrique A. Cavalcanti
-- Thales Martim Coutinho
--
--
--
+- Janeide Batista Gomes 
+- Lucas Daniel da Silva Araújo 
+- Silas Matias de Oliveira
+- Thales Martim  Coutinho
+- Thiago de Almeida Silva
+- Vander Oliveira Jampaulo 
+
+

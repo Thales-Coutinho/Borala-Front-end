@@ -32,8 +32,8 @@ function Select(props) {
                     <option
                         key={item.id}
                         value={item.id}
-                        name={item.nome}>
-                        {item.nome}
+                        name={item.name}>
+                        {item.name}
                     </option>
                 )}
             </select>

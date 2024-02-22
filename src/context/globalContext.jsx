@@ -11,7 +11,7 @@ export const GlobbalProvider = ({ children }) => {
     let [filters, setfilters] = useState([])
 
     useEffect(() => {
-        apiRest.get('cidades/')
+        apiRest.get('cities/')
             .then(response => {
                 setCities(response.data)
             })
