@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const DivStyled = styled.div`
+margin-bottom:10px;
 div{
     display: flex;
   align-items: center;
   margin-bottom:-4px;
-  margin-top:5px;
 }
 input{
     width:290px;

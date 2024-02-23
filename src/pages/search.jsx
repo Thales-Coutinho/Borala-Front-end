@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { SlLocationPin, SlCalender, SlMagnifier } from "react-icons/sl";
 
 import { GlobbalContext } from "../context/globalContext"
-import apiRest from "../utils/apiRest"
 
 import Button from "../components/button"
 import InputDate from "../components/inputDate"
@@ -33,13 +32,13 @@ display: flex;
 
 function Search() {
     const navigate = useNavigate()
-    const { cities, setTrips, filters, setfilters } = useContext(GlobbalContext)
+    const { cities, setfilters } = useContext(GlobbalContext)
 
     const [departureCity, setDepartureCity] = useState('')
     const [destinationCity, setDestinationCity] = useState('')
     const [day, setDay] = useState('')
 
-    function search() {
+    function searchTrips() {
 
         setfilters({
             departureCity: departureCity,
@@ -47,19 +46,12 @@ function Search() {
             day: day,
         })
 
-        apiRest.get('trips/', {
-            params: filters,
-        })
-            .then(response => {
-                setTrips(response.data)
-            })
-
         navigate("/viagensDisponiveis")
 
     }
 
     return (
-        <FormStyled onSubmit={search}>
+        <FormStyled onSubmit={searchTrips}>
             <h1>Buscar Carona</h1>
             <Select
                 text="Local de partida" icon={<SlLocationPin />} placeholder="selecione uma cidade"

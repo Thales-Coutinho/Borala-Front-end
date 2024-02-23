@@ -17,7 +17,9 @@ display: flex;
   align-items: center;
   flex-direction: column;
 
-  
+  p{
+    max-width: 500px;
+  }
 `
 
 function SucessBooked() {

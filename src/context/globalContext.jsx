@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useMemo, useState } from 'react';
 import apiRest from '../utils/apiRest';
 
 export const GlobbalContext = createContext();
@@ -13,9 +13,24 @@ export const GlobbalProvider = ({ children }) => {
     useEffect(() => {
         apiRest.get('cities/')
             .then(response => {
-                setCities(response.data)
+                setCities(response.data.cities)
             })
+            .catch(error => 
+                alert("erro ao carregar Cidades error:" + error)
+                )
     }, [])
+
+    useMemo(() => {
+        apiRest.get('trips/', {
+            params: filters,
+        })
+            .then(response => {
+                setTrips(response.data.trips)
+            })
+            .catch(error => 
+                alert("erro ao carregar viagens error:" + error)
+                )
+    }, [filters])
 
     return (
         <GlobbalContext.Provider
