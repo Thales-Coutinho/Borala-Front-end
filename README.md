@@ -4,16 +4,16 @@
 
 🚘 Um aplicativo de caronas que tem como objetivo proporcionar uma experiência de transporte personalizado, conectando motorista e passageiro de maneira eficiente e segura.
 
-Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:(...)
+Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:[github.com/Thales-Coutinho/Borala-Back-end](https://github.com/Thales-Coutinho/Borala-Back-end)
 
 ## Índice
-- <a href="##funcinalidades">Funcionalidades do Projeto</a>
-- <a href="##tecnologias">Tecnologias utilizadas</a>
-- <a href="##beneficios">Benefícios</a>
-- <a href="##beneficios">Benefícios</a>
-- <a href="##rodando">Como rodar o projeto?</a>
-- <a href="##Autores">Pessoas Autoras</a>
+1. [Funcionalidades do Projeto](#funcionalidades)
+2. [Como rodar o projeto?](#executar)
+3. [Tecnologias utilizadas](#tecnologias)
+4. [Benefícios](#beneficios)
+5. [Autores](#autores)
 
+<div id='funcionalidades'/>  
 ## 📱Funcionalidades do Projeto
 - [ ] Cadastro de usuário
 - [ ] Login
@@ -23,6 +23,7 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 - [ ] Fazer reserva 
 - [ ] Confirmar reserva
 
+<div id='executar'/>  
 ## Como rodar o projeto?
 
 1. clone o repositório e instale o node.Js em sua maquina (https://nodejs.org/en/download/current)
@@ -30,6 +31,7 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 3. execute o comando (npm run dev) para rodar a aplicação no modo desenvolvimento
 4. acesse em qualquer navegador o endereço http://localhost:5173/
 
+<div id='tecnologias'/>  
 ## 🛠️ Tecnologias utilizadas
 
 1. [React](https://react.dev/)
@@ -38,13 +40,14 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 4. [axios](https://axios-http.com/docs/intro)
 5. [styled-components](https://styled-components.com/)
 
-
+<div id='beneficios'/>  
 ## Benefícios
 - Compartilhar custos de viagens
 - Redução de tráfego nas rodovias
 - Flexibilidade de horários
 - Acessibilidade com carros preparados para decifientes
 
+<div id='autores'/>  
 ## Autores
 - Henrique A. Cavalcanti
 - Janeide Batista Gomes 
