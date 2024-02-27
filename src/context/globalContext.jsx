@@ -13,7 +13,7 @@ export const GlobbalProvider = ({ children }) => {
     useEffect(() => {
         apiRest.get('cities/')
             .then(response => {
-                setCities(response.data.cities)
+                setCities(response.data)
             })
             .catch(error => 
                 alert("erro ao carregar Cidades error:" + error)
@@ -25,7 +25,7 @@ export const GlobbalProvider = ({ children }) => {
             params: filters,
         })
             .then(response => {
-                setTrips(response.data.trips)
+                setTrips(response.data)
             })
             .catch(error => 
                 alert("erro ao carregar viagens error:" + error)
