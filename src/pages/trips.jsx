@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Button from "../components/button"
 import TripCard from "../components/tripCard"
 import TripNotFounded from "../components/tripNotFounded"
+import Filters from "../components/filters";
 
 const NavStyled = styled.nav`
 
@@ -17,7 +18,7 @@ function Trips() {
     return (
         <NavStyled>
             {filters.departureCity !== undefined &&
-                <h1>viagens de: {filters.departureCity} Para: {filters.destinationCity} no dia:{filters.day}</h1>
+                <Filters/>
             }
 
             {trips.length > 0 ?
