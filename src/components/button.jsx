@@ -15,6 +15,11 @@ display: flex;
   background-color: #51714B;
   color: #FFFFFF;
   text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #394e35;
+  }
 `
 
 function Button(props) {
