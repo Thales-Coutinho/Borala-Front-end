@@ -14,7 +14,7 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 5. [Autores](#autores)
 
 <div id='funcionalidades'/>
-  
+
 ## 📱Funcionalidades do Projeto
 - [ ] Cadastro de usuário
 - [ ] Login
@@ -34,7 +34,7 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 4. acesse em qualquer navegador o endereço http://localhost:5173/
 
 <div id='tecnologias'/>  
-  
+
 ## 🛠️ Tecnologias utilizadas
 
 1. [React](https://react.dev/)
@@ -44,7 +44,7 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 5. [styled-components](https://styled-components.com/)
 
 <div id='beneficios'/>  
-  
+
 ## Benefícios
 - Compartilhar custos de viagens
 - Redução de tráfego nas rodovias
@@ -52,14 +52,13 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 - Acessibilidade com carros preparados para decifientes
 
 <div id='autores'/>  
-  
+
 ## Autores
 - Henrique A. Cavalcanti
-- Janeide Batista Gomes 
+-   Janeide Batista Gomes 
 - Lucas Daniel da Silva Araújo 
 - Silas Matias de Oliveira
 - Thales Martim  Coutinho
 - Thiago de Almeida Silva
 - Vander Oliveira Jampaulo 
-
 
