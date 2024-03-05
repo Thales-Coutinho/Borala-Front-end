@@ -60,5 +60,5 @@ Front-end que se utiliza de API REST para se comunicar com o back-end diponivel:
 - Silas Matias de Oliveira
 - Thales Martim  Coutinho
 - Thiago de Almeida Silva
-- Vander Oliveira Jampaulo 
+-  Vander Oliveira Jampaulo 
 
