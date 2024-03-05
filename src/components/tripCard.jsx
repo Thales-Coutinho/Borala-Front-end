@@ -34,6 +34,7 @@ span{
 
 function TripCard(props) {
     const navigate = useNavigate()
+    const formatMoney = Intl.NumberFormat('pt-br', {style:'currency', currency: 'BRL'})
 
     function confirmReservation() {
         if (confirm("confirmar reserva?") == true) {
@@ -51,7 +52,7 @@ function TripCard(props) {
                 <FaStar color="#ffc700" />
                 </span>
             </div>
-            <p>valor: <span><b>{props.trip.price} R$</b></span></p>
+            <p>valor: <span><b>{formatMoney.format(props.trip.price)}</b></span></p>
             <p>horario de partida: <b>{props.trip.hour}</b></p>
             <p>local de partida: <b>{props.trip.local}</b></p>
             <Button text="reservar viagem" click={confirmReservation} />

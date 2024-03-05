@@ -24,7 +24,7 @@ function Filters() {
     <DivStyled>
         <p>viagens de: {filters.departureCity}</p>
         <p>Para: {filters.destinationCity}</p>
-        <p>no dia:{filters.day}</p>
+        <p>no dia:{new Date(filters.day).toLocaleDateString()}</p>
     </DivStyled>
   )
 }
