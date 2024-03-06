@@ -34,7 +34,8 @@ span{
 
 function TripCard(props) {
     const navigate = useNavigate()
-    const formatMoney = Intl.NumberFormat('pt-br', {style:'currency', currency: 'BRL'})
+    const formatMoney = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' })
+    const [hour, minute] = props.trip.hour.split(':');
 
     function confirmReservation() {
         if (confirm("confirmar reserva?") == true) {
@@ -48,12 +49,12 @@ function TripCard(props) {
                 <FaRegUserCircle size={25} />
                 <h1>{props.trip.name}</h1>
                 <span>
-                {props.trip.score}
-                <FaStar color="#ffc700" />
+                    {props.trip.score}
+                    <FaStar color="#ffc700" />
                 </span>
             </div>
             <p>valor: <span><b>{formatMoney.format(props.trip.price)}</b></span></p>
-            <p>horario de partida: <b>{props.trip.hour}</b></p>
+            <p>horario de partida: <b>{hour}:{minute}</b></p>
             <p>local de partida: <b>{props.trip.local}</b></p>
             <Button text="reservar viagem" click={confirmReservation} />
         </DivStyled>

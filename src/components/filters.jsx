@@ -18,13 +18,13 @@ p{
 `
 
 function Filters() {
-    const { filters } = useContext(GlobbalContext)
+  const { filters } = useContext(GlobbalContext)
 
   return (
     <DivStyled>
-        <p>viagens de: {filters.departureCity}</p>
-        <p>Para: {filters.destinationCity}</p>
-        <p>no dia:{new Date(filters.day).toLocaleDateString()}</p>
+      <p>viagens de: {filters.departureCity}</p>
+      <p>Para: {filters.destinationCity}</p>
+      <p>no dia:{new Date(filters.day).toLocaleDateString(undefined, { timeZone: "UTC" })}</p>
     </DivStyled>
   )
 }
